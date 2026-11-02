@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quarterly Support Review</title>
+<style data-pr="base"></style>
+<style>
+@page { size: A4; margin: 16mm 16mm 18mm; }
+@page {
+  @bottom-left { content: "Quarterly Support Review"; font: 8pt var(--pr-font-body); color: var(--pr-muted); }
+}
+@page :first { @bottom-left { content: none; } }
+.title-block { display: grid; gap: 3mm; margin-bottom: 8mm; }
+.title-block h1 { max-width: 24ch; }
+.summary { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.summary > * { min-width: 0; }
+.chart text { font: 8pt var(--pr-font-body); fill: var(--pr-muted); }
+.chart .bar { fill: var(--pr-accent); }
+.chart .bar.prev { fill: var(--pr-rule); }
+.chart .axis { stroke: var(--pr-rule); stroke-width: 1; }
+</style>
+<style data-pr="theme"></style>
+</head>
+<body>
+<main class="doc">
+  <header class="title-block">
+    <div class="pr-logo"></div>
+    <p class="eyebrow">Report · Q3 2026</p>
+    <h1>Quarterly Support Review</h1>
+    <p class="lede">How ticket volume, first response time and customer satisfaction moved this quarter, and what we change next.</p>
+    <dl class="doc-meta">
+      <dt>Author</dt><dd>Support Operations</dd>
+      <dt>Date</dt><dd>2 November 2026</dd>
+      <dt>Status</dt><dd>Final</dd>
+    </dl>
+  </header>
+
+  <section class="keep">
+    <h2>Summary</h2>
+    <div class="figures">
+      <div class="figure-tile"><b>4,812</b><span>tickets, +9% on Q2</span></div>
+      <div class="figure-tile"><b>2 h 14 m</b><span>median first response</span></div>
+      <div class="figure-tile"><b>91%</b><span>satisfied customers</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ticket volume</h2>
+    <div class="keep">
+      <p>Volume rose in every month, driven by the September billing change. Weekday peaks stayed below staffed capacity.</p>
+      <figure>
+        <svg class="chart" viewBox="0 0 520 200" role="img" aria-label="Tickets per month, Q2 and Q3">
+          <line class="axis" x1="40" y1="170" x2="510" y2="170"/>
+          <text x="34" y="174" text-anchor="end">0</text>
+          <text x="34" y="94" text-anchor="end">1,000</text>
+          <text x="34" y="14" text-anchor="end">2,000</text>
+          <rect class="bar prev" x="70" y="59" width="40" height="111"/>
+          <rect class="bar" x="114" y="54" width="40" height="116"/>
+          <text x="112" y="186" text-anchor="middle">Jul</text>
+          <rect class="bar prev" x="230" y="52" width="40" height="118"/>
+          <rect class="bar" x="274" y="48" width="40" height="122"/>
+          <text x="272" y="186" text-anchor="middle">Aug</text>
+          <rect class="bar prev" x="390" y="46" width="40" height="124"/>
+          <rect class="bar" x="434" y="23" width="40" height="147"/>
+          <text x="432" y="186" text-anchor="middle">Sep</text>
+        </svg>
+        <figcaption>Tickets per month. Light bars: same month last quarter. Dark bars: this quarter.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>By channel</h2>
+    <table class="keep">
+      <thead><tr><th>Channel</th><th class="num">Tickets</th><th class="num">Share</th><th class="num">Median response</th></tr></thead>
+      <tbody>
+        <tr><td>Email</td><td class="num">2,406</td><td class="num">50%</td><td class="num">3 h 05 m</td></tr>
+        <tr><td>Chat</td><td class="num">1,684</td><td class="num">35%</td><td class="num">0 h 06 m</td></tr>
+        <tr><td>Phone</td><td class="num">722</td><td class="num">15%</td><td class="num">0 h 01 m</td></tr>
+      </tbody>
+      <tfoot><tr><td>Total</td><td class="num">4,812</td><td class="num">100%</td><td class="num">2 h 14 m</td></tr></tfoot>
+    </table>
+  </section>
+
+  <section>
+    <h2>Next quarter</h2>
+    <div class="callout keep">
+      <p><strong>Decision needed:</strong> move one email agent to chat during the billing peak in the first week of each month.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

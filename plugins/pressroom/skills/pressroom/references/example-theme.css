@@ -1,0 +1,16 @@
+:root {
+  --pr-ink: #1f2a24;
+  --pr-ink-soft: #3f4c45;
+  --pr-muted: #66736b;
+  --pr-rule: #d6ddd8;
+  --pr-rule-strong: #1f2a24;
+  --pr-surface: #f2f5f2;
+  --pr-accent: #2f6a4a;
+  --pr-accent-soft: #e4efe7;
+  --pr-font-display: "Public Sans", "Segoe UI", Arial, sans-serif;
+  --pr-heading-weight: 700;
+  --pr-radius: 1mm;
+  --pr-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 40'%3E%3Ccircle cx='20' cy='20' r='16' fill='%232f6a4a'/%3E%3Cpath d='M12 24c6-12 10-12 16 0' stroke='%23fff' stroke-width='3' fill='none'/%3E%3Ctext x='44' y='27' font-family='Georgia,serif' font-size='20' fill='%231f2a24'%3EFieldnote%3C/text%3E%3C/svg%3E");
+  --pr-logo-width: 40mm;
+  --pr-logo-height: 10mm;
+}

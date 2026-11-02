@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fire Drill Handout</title>
+<style data-pr="base"></style>
+<style>
+@page { size: A4; margin: 12mm; }
+@page :first { @bottom-right { content: none; } }
+.doc { padding: 12mm; }
+.hero { display: grid; gap: 2mm; padding: 7mm 8mm; background: var(--pr-accent); color: var(--pr-accent-ink); border-radius: var(--pr-radius); margin-bottom: 7mm; }
+.hero h1, .hero .eyebrow { color: inherit; }
+.hero p { margin: 0; max-width: 60ch; }
+.steps { counter-reset: step; list-style: none; padding: 0; display: grid; gap: 3mm; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 9mm 1fr; gap: 3mm; margin: 0; }
+.steps li::before { content: counter(step); font: 600 1.4em/1 var(--pr-font-display); color: var(--pr-accent); }
+.grid2 { display: grid; grid-template-columns: 1.3fr 1fr; gap: 8mm; }
+.grid2 > * { min-width: 0; }
+.grid2 h2 { margin-top: 0; }
+.contact { margin-top: 6mm; padding-top: 3mm; border-top: 0.3mm solid var(--pr-rule); display: flex; flex-wrap: wrap; gap: 2mm 10mm; font-size: 0.9em; }
+@media print { .doc { padding: 0; } }
+</style>
+<style data-pr="theme"></style>
+</head>
+<body>
+<main class="doc">
+  <header class="hero">
+    <p class="eyebrow">Building B · Thursday 12 November, 10:30</p>
+    <h1>Fire drill: what to do</h1>
+    <p>The alarm sounds for about 30 seconds. Leave by the nearest exit and gather at assembly point 3 on the car park.</p>
+  </header>
+
+  <div class="grid2">
+    <section>
+      <h2>When the alarm sounds</h2>
+      <ol class="steps">
+        <li><span>Stop what you are doing. Leave your bag and coffee.</span></li>
+        <li><span>Close windows and doors behind you on the way out.</span></li>
+        <li><span>Take the stairs, never the lift. Keep to the right.</span></li>
+        <li><span>Report to your floor warden at assembly point 3.</span></li>
+        <li><span>Stay until the warden says the building is clear.</span></li>
+      </ol>
+    </section>
+    <aside>
+      <h2>Floor wardens</h2>
+      <table>
+        <tbody>
+          <tr><td>Ground</td><td>Sanne Bakker</td></tr>
+          <tr><td>First</td><td>Omar Haddad</td></tr>
+          <tr><td>Second</td><td>Lieke Smit</td></tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        <p><strong>Need help on the stairs?</strong> Tell your warden before the drill so someone is assigned to you.</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="contact">
+    <span>Facilities desk: ext. 2200</span>
+    <span>Emergency: 112</span>
+    <span>Questions: facilities@company.example</span>
+  </footer>
+</main>
+</body>
+</html>

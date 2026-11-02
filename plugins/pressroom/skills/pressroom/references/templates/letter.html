@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Letter Partnership Renewal</title>
+<style data-pr="base"></style>
+<style>
+@page { size: A4; margin: 22mm 22mm 22mm 25mm; }
+@page {
+  @bottom-right { content: "Page " counter(page) " of " counter(pages); font: 7.5pt var(--pr-font-body); color: var(--pr-muted); }
+}
+@page :first { margin-top: 15mm; @bottom-right { content: none; } }
+.doc.letter { padding: 15mm 22mm 22mm 25mm; }
+.letterhead { display: flex; justify-content: space-between; align-items: flex-start; gap: 8mm; min-height: 30mm; }
+.sender { font-size: 8.5pt; line-height: 1.4; color: var(--pr-ink-soft); text-align: right; }
+.sender strong { color: var(--pr-ink); font-size: 1.15em; }
+.window { min-height: 45mm; width: 85mm; padding-top: 2mm; }
+.recipient { line-height: 1.4; }
+.date { margin: 4mm 0 8mm; }
+.subject { font-weight: 650; margin-bottom: 6mm; }
+@media print { .doc.letter { padding: 0; } }
+</style>
+<style data-pr="theme"></style>
+</head>
+<body>
+<main class="doc letter">
+  <header class="letterhead">
+    <div class="pr-logo"></div>
+    <address class="sender">
+      <strong>Northfield Design Studio</strong><br>
+      14 Market Street<br>
+      Leeds LS1 6DT, United Kingdom<br>
+      +44 113 496 0123 · hello@northfield.example
+    </address>
+  </header>
+
+  <div class="window">
+    <address class="recipient">
+      Ms Clara Jensen<br>
+      Head of Communications<br>
+      Aalborg Harbour Authority<br>
+      Havnegade 2<br>
+      9000 Aalborg, Denmark
+    </address>
+  </div>
+
+  <p class="date">2 November 2026</p>
+  <p class="subject">Renewal of the wayfinding design agreement</p>
+
+  <p>Dear Ms Jensen,</p>
+  <p>Thank you for the productive review meeting last week. As agreed, we propose to renew the wayfinding design agreement for another twelve months, starting 1 January 2027, on the same day rate.</p>
+  <p>The attached schedule lists the three signage phases we discussed and the review points between them. If the schedule suits you, please sign and return the enclosed copy before 1 December.</p>
+
+  <div class="signature">
+    <p>Kind regards,</p>
+    <div class="space"></div>
+    <p><strong>Tom Ashworth</strong><br>Studio Director</p>
+  </div>
+
+  <p class="small muted">Enclosure: renewal schedule 2027</p>
+</main>
+</body>
+</html>

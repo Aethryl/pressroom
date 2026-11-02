@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pressroom",
+  "description": "A skill that makes Claude a document creator: print-ready HTML and clean PDFs, made locally",
+  "owner": {
+    "name": "Fabian Rutten"
+  },
+  "plugins": [
+    {
+      "name": "pressroom",
+      "source": "./plugins/pressroom",
+      "description": "Reports, letters, quotes, handouts, CVs: written as print-ready HTML, rendered to PDF with headless Chromium, checked page by page",
+      "version": "0.1.0",
+      "author": {
+        "name": "Fabian Rutten"
+      },
+      "category": "productivity",
+      "keywords": [
+        "pdf",
+        "documents",
+        "print",
+        "letter",
+        "report",
+        "cv",
+        "html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV Anouk Visser</title>
+<style data-pr="base"></style>
+<style>
+@page { size: A4; margin: 14mm 14mm 16mm; }
+@page :first { @bottom-right { content: none; } }
+:root { --pr-size: 9.8pt; }
+.doc { padding: 14mm; }
+.cv-head { display: grid; grid-template-columns: 1fr auto; gap: 2mm 8mm; align-items: end; padding-bottom: 5mm; margin-bottom: 6mm; border-bottom: 0.4mm solid var(--pr-rule-strong); }
+.cv-head h1 { font-size: 2.6em; }
+.cv-head .role { margin: 0; font-size: 1.15em; color: var(--pr-accent); }
+.contact { margin: 0; font-size: 0.88em; line-height: 1.55; text-align: right; color: var(--pr-ink-soft); }
+.cv { display: grid; grid-template-columns: 1fr 52mm; gap: 9mm; }
+.cv > * { min-width: 0; }
+.cv h2 { font-size: 0.8em; font-family: var(--pr-font-body); text-transform: uppercase; letter-spacing: 0.1em; color: var(--pr-accent); margin: 0 0 3mm; padding-bottom: 1.2mm; border-bottom: 0.25mm solid var(--pr-rule); }
+.cv section + section { margin-top: 6mm; }
+.job { display: grid; gap: 0.6mm; margin-bottom: 4.5mm; }
+.job header { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
+.job h3 { margin: 0; font-size: 1.08em; }
+.job .when { font-size: 0.85em; color: var(--pr-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.job .org { margin: 0; color: var(--pr-ink-soft); font-size: 0.92em; }
+.job ul { margin: 1mm 0 0; }
+.side p, .side ul { font-size: 0.92em; }
+.side ul { list-style: none; padding: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 1.5mm; }
+.tags span { padding: 0.5mm 2mm; background: var(--pr-surface); border-radius: var(--pr-radius); font-size: 0.86em; }
+@media print { .doc { padding: 0; } .job { break-inside: avoid; } }
+</style>
+<style data-pr="theme"></style>
+</head>
+<body>
+<main class="doc">
+  <header class="cv-head">
+    <div>
+      <h1>Anouk Visser</h1>
+      <p class="role">Product designer, public services</p>
+    </div>
+    <address class="contact">
+      Rotterdam, Netherlands<br>
+      +31 6 1234 5678<br>
+      anouk@visser.example<br>
+      visser.example/work
+    </address>
+  </header>
+
+  <div class="cv">
+    <div>
+      <section>
+        <h2>Profile</h2>
+        <p>Product designer with ten years in government and healthcare services. I turn complex rules into forms people finish on the first try, and I test with real users every sprint.</p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <article class="job">
+          <header><h3>Lead product designer</h3><span class="when">2022 – now</span></header>
+          <p class="org">Municipality of Rotterdam, digital services</p>
+          <ul>
+            <li>Redesigned the parking permit application; completion rose from 61% to 88%.</li>
+            <li>Set up a design system used by four teams and 30+ services.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <header><h3>Senior interaction designer</h3><span class="when">2018 – 2022</span></header>
+          <p class="org">Zorgpunt, patient portal</p>
+          <ul>
+            <li>Led the appointment flow rebuild for 1.2 million patients.</li>
+            <li>Ran monthly usability sessions with patients over 70.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <header><h3>Interaction designer</h3><span class="when">2016 – 2018</span></header>
+          <p class="org">Studio Haven, agency</p>
+          <ul><li>Designed booking and checkout flows for travel and retail clients.</li></ul>
+        </article>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>Skills</h2>
+        <div class="tags"><span>Service design</span><span>Form design</span><span>Usability testing</span><span>Design systems</span><span>Figma</span><span>WCAG 2.2</span></div>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <p><strong>MSc Design for Interaction</strong><br>TU Delft, 2016</p>
+      </section>
+      <section>
+        <h2>Languages</h2>
+        <ul><li>Dutch, native</li><li>English, fluent</li><li>German, good</li></ul>
+      </section>
+    </aside>
+  </div>
+</main>
+</body>
+</html>

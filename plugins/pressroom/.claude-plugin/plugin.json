@@ -1,0 +1,21 @@
+{
+  "name": "pressroom",
+  "version": "0.1.0",
+  "description": "Makes Claude a document creator: reports, letters, quotes, handouts and CVs written as print-ready HTML, rendered to PDF with headless Chromium and reviewed page by page.",
+  "author": {
+    "name": "Fabian Rutten"
+  },
+  "homepage": "https://github.com/Aethryl/pressroom",
+  "repository": "https://github.com/Aethryl/pressroom",
+  "license": "MIT",
+  "keywords": [
+    "pdf",
+    "documents",
+    "print",
+    "letter",
+    "report",
+    "cv",
+    "html"
+  ],
+  "icon": ".claude-plugin/icon.png"
+}
